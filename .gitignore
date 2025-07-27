@@ -1,17 +1,76 @@
-# Ignore environment variables
-.env
-
-# Python cache
+# ========================
+# Python-related
+# ========================
 __pycache__/
-*.pyc
-
-# Logs
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 *.log
 
-# Vector DB and uploads
+# ========================
+# Virtual environment
+# ========================
+env/
+venv/
+ENV/
+env.bak/
+*.env
+
+# ========================
+# OS / Editor specific
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ========================
+# Jupyter/IPython
+# ========================
+.ipynb_checkpoints
+*.ipynb
+
+# ========================
+# Environment and config
+# ========================
+*.env
+.env.*
+
+# ========================
+# LangChain / Vector DB
+# ========================
 vectorstore/
 uploads/
+*.db
+*.sqlite3
+*.json
 
-# OS-specific
-.DS_Store
-.env
+# ========================
+# Models / Checkpoints
+# ========================
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+
+# ========================
+# Large library binaries (not version-controlled)
+# ========================
+**/site-packages/**/torch/lib/*
+**/site-packages/**/llvmlite/binding/*
+
+# ========================
+# Git and LFS
+# ========================
+.gitattributes
+.gitmodules
+
+# ========================
+# Misc
+# ========================
+*.bak
+*.tmp
