@@ -1,0 +1,377 @@
+:root {
+    --primary-color: #3a4f7a; /* Deep blue */
+    --secondary-color: #4c6a9c; /* Lighter blue */
+    --accent-color: #ff8c00; /* Changed accent to dark orange for contrast */
+    --light-color: #f8f9fa; /* Very light grey */
+    --dark-color: #343a40; /* Dark grey */
+    --error-color: #dc3545; /* Red for errors */
+    --success-color: #28a745; /* Green for success */
+    --border-color: #dee2e6; /* Light border color */
+    --hindi-font: 'Noto Sans', 'Poppins', sans-serif; /* Added Poppins fallback */
+    --english-font: 'Noto Serif', serif;
+}
+
+body {
+    font-family: var(--english-font);
+    line-height: 1.7; /* Slightly increased line height */
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size */
+}
+
+.container {
+    max-width: 850px; /* Slightly wider */
+    margin: 20px auto; /* Added top/bottom margin */
+    padding: 25px;
+    background-color: #ffffff; /* White background for container */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: var(--hindi-font);
+    color: var(--primary-color);
+    font-size: 2.4rem; /* Slightly larger */
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    font-size: 1.5rem; /* Adjusted size */
+    font-weight: 400;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+h4 {
+     color: var(--secondary-color);
+     margin-top: 20px;
+     margin-bottom: 10px;
+     font-size: 1.1rem;
+}
+
+
+.controls {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Space out mode and region */
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px; /* Add gap between items */
+}
+
+
+.mode-selector {
+    display: flex;
+    gap: 10px; /* Space between mode buttons */
+}
+
+.region-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.region-selector label {
+    font-size: 0.95em;
+    color: var(--dark-color);
+}
+
+#regionSelect {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: var(--english-font);
+    font-size: 0.95em;
+    cursor: pointer;
+    min-width: 180px; /* Ensure dropdown has some width */
+}
+
+.interface {
+    background: #ffffff; /* Keep white */
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color); /* Subtle border */
+    margin-bottom: 25px;
+}
+
+.hidden {
+    display: none !important; /* Use important to override potential conflicts */
+}
+
+textarea#queryInput {
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding/border in width */
+    height: 130px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1rem; /* Consistent font size */
+    font-family: var(--english-font);
+    margin-bottom: 10px; /* Space before button */
+}
+
+textarea#queryInput::placeholder {
+     color: #6c757d; /* Placeholder color */
+     font-style: italic;
+}
+
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Slightly larger padding */
+    border-radius: 5px; /* Smoother corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500; /* Medium weight */
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active:not(:disabled) {
+     background-color: var(--accent-color);
+     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+button:disabled {
+    background-color: #adb5bd; /* Grey out disabled button */
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+button.active {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+/* Voice Interface Specific */
+#voiceInterface button#recordButton {
+     min-width: 180px; /* Give record button some width */
+}
+
+#responseAudio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#transcriptionArea {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--light-color);
+    border: 1px dashed var(--border-color);
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+#transcriptionArea h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+#transcriptionText {
+     color: var(--dark-color);
+     font-style: italic;
+}
+
+
+/* Response Area */
+#responseArea {
+    background: #ffffff;
+    padding: 20px 25px; /* Adjust padding */
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-top: 20px;
+}
+
+.response-content {
+    margin-bottom: 20px; /* Space between Eng/Hin responses */
+}
+
+.response-content p:first-child {
+    margin-top: 0;
+}
+.response-content p:last-child {
+    margin-bottom: 0;
+}
+
+.hindi-text {
+    font-family: var(--hindi-font);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 1.1em; /* Make Hindi slightly larger if desired */
+    line-height: 1.8;
+}
+
+.sources {
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.sources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sources li {
+    padding: 12px 0; /* Increased padding */
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px; /* Space between list items */
+}
+.sources li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+
+.sources strong {
+    color: var(--primary-color);
+    display: block; /* Make source name block */
+    margin-bottom: 4px;
+}
+
+.sources .excerpt {
+    color: #555; /* Slightly darker excerpt text */
+    font-style: italic;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 2px solid var(--accent-color);
+}
+
+
+/* Recording Status & Loading */
+.recording-status {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.pulse {
+    width: 12px; /* Smaller pulse */
+    height: 12px;
+    background-color: var(--error-color); /* Use error color for recording */
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 8px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: var(--primary-color);
+    animation: spin 1s ease infinite;
+    margin-right: 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading span {
+    font-size: 1.1em;
+    color: var(--dark-color);
+}
+
+
+/* Footer & Health Status */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    color: #6c757d; /* Grey footer text */
+    font-size: 0.9em;
+}
+
+.health-status {
+     margin-top: 10px;
+     font-size: 0.85em;
+     font-style: italic;
+}
+.health-status.healthy {
+     color: var(--success-color);
+}
+.health-status.unhealthy {
+     color: var(--error-color);
+     font-weight: bold;
+}
+
+
+/* Error styling */
+.error {
+    color: var(--error-color);
+    font-weight: bold;
+    background-color: rgba(220, 53, 69, 0.1); /* Light red background */
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0; /* Add margin around error messages */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    .controls {
+        flex-direction: column; /* Stack controls vertically */
+        align-items: stretch; /* Stretch items to full width */
+    }
+    #regionSelect {
+        width: 100%; /* Make dropdown full width */
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.3rem; }
+    button { padding: 10px 20px; }
+}

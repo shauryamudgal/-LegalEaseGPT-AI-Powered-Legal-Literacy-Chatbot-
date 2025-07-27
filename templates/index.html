@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legal RAG Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>भारतीय कानूनी सहायक</h1>
+            <h2>Indian Legal Assistant</h2>
+        </header>
+
+        <div class="controls">
+            <div class="mode-selector">
+                <button id="textMode" class="active">Text Query</button>
+                <button id="voiceMode">Voice Query</button>
+            </div>
+
+            <!-- Region Selector -->
+            <div class="region-selector">
+                <label for="regionSelect">Select Region/Jurisdiction:</label>
+                <select id="regionSelect">
+                    {% for key, value in regions.items() %}
+                        <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %}
+                    <!-- Default option if regions dict is empty -->
+                    {% if not regions %}
+                        <option value="general">General</option>
+                    {% endif %}
+                </select>
+            </div>
+        </div>
+
+
+        <div id="textInterface" class="interface">
+            <textarea id="queryInput" placeholder="Ask your legal question in English or Hindi..."></textarea>
+            <button id="submitQuery">Submit</button>
+        </div>
+
+        <div id="voiceInterface" class="interface hidden">
+            <button id="recordButton">Record Question</button>
+            <div class="recording-status hidden">
+                <div class="pulse"></div>
+                <span id="recordingStatusText">Recording...</span>
+            </div>
+             <div id="transcriptionArea" class="hidden">
+                <h4>Heard:</h4>
+                <p id="transcriptionText"></p>
+            </div>
+            <audio id="responseAudio" controls class="hidden"></audio>
+        </div>
+
+         <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Processing your request...</span>
+        </div>
+
+        <div id="responseArea" class="hidden">
+            <h3>Response:</h3>
+            <div id="responseText" class="response-content"></div>
+            <div id="hindiResponse" class="hindi-text response-content"></div> <!-- Added hindi-text class -->
+
+            <div class="sources" id="sourcesArea"> <!-- Renamed for clarity -->
+                <h4>Reference Sources:</h4>
+                <ul id="sourcesList"></ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Indian Legal RAG System | Powered by AI</p>
+            <div id="healthStatus" class="health-status">Checking system status...</div>
+        </footer>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

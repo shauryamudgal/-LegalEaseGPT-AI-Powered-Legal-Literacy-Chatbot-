@@ -1,0 +1,11 @@
+langchain
+langchain-community
+python-dotenv
+langchain-mistralai
+langchain-huggingface
+sentence-transformers
+tqdm
+faiss-cpu
+flask
+openai-whisper
+gtts

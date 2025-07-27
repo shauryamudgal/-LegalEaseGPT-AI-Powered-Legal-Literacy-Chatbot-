@@ -1,0 +1,17 @@
+# Ignore environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Vector DB and uploads
+vectorstore/
+uploads/
+
+# OS-specific
+.DS_Store
+.env

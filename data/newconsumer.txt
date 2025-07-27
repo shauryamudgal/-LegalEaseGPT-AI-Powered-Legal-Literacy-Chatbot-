@@ -1,0 +1,63 @@
+Here is a clean, detailed text on consumer rights in India based exclusively on official government sources and authoritative legal texts, suitable for use in a retrieval-augmented generation system:
+
+Consumer Rights in India – Official Legal Framework and Information
+
+The Consumer Protection Act, 2019 is the primary legislation governing consumer rights in India. It replaced the earlier Consumer Protection Act of 1986 to address the challenges of modern markets, including digital commerce. The Act came into force on July 24, 2020.
+
+The Act defines a consumer broadly as any person who buys goods or avails services for personal use, including purchases made offline, online, through teleshopping, direct selling, or multi-level marketing. Transactions made exclusively for commercial purposes or resale are excluded.
+
+Key consumer rights under the Act include:
+
+Right to Safety: Protection against goods and services that are hazardous to life and property. Consumers have the right to access safe, quality products that meet prescribed standards.
+
+Right to be Informed: Consumers must receive accurate information about the quality, quantity, potency, purity, standard, and price of goods or services to make informed choices.
+
+Right to Choose: Consumers have the freedom to select from a variety of goods and services at competitive prices.
+
+Right to be Heard: Consumer interests will receive due consideration at appropriate forums. Consumers can file complaints and have their grievances addressed.
+
+Right to Seek Redressal: Consumers can seek compensation or remedies for unfair trade practices, defective goods, or deficient services.
+
+Right to Consumer Education: Consumers should be informed about their rights and responsibilities.
+
+The Central Consumer Protection Authority (CCPA) was established under the 2019 Act as a regulatory body to protect consumer rights and enforce the law. It has powers to investigate violations, initiate class action suits, recall unsafe products, order corrective advertisements, and impose penalties for unfair trade practices and misleading advertisements. The CCPA acts on behalf of consumers as a class and handles large-scale or public interest matters.
+
+For individual grievances, consumers can approach the three-tier consumer dispute redressal mechanism:
+
+District Consumer Disputes Redressal Forum for claims up to one crore rupees.
+
+State Consumer Disputes Redressal Commission for claims between one crore and ten crore rupees.
+
+National Consumer Disputes Redressal Commission for claims exceeding ten crore rupees.
+
+The Act also introduced mediation as an alternative dispute resolution mechanism to expedite settlements with mutual consent.
+
+The Department of Consumer Affairs has facilitated online complaint registration through the National Consumer Helpline and the e-Daakhil portal, enabling consumers to file and track complaints electronically. The government has launched AI-driven initiatives to strengthen consumer protection, including mobile applications and portals for grievance redressal.
+
+The Act specifically addresses unfair trade practices such as false or misleading advertisements, deceptive pricing, false guarantees or warranties, and the sale of hazardous or substandard goods. The CCPA has taken action against companies violating these provisions and issued penalties.
+
+Special provisions protect vulnerable consumers including the elderly, persons with disabilities, and low-income groups. These include a cooling-off period to cancel contracts, protection from predatory financial practices, and access to specialized dispute resolution.
+
+The Consumer Protection Act mandates that complaints be filed within two years from the date of cause of action, with some flexibility in exceptional cases.
+
+India’s consumer protection framework continues to evolve to meet challenges posed by the growth of e-commerce, digital transactions, and complex market practices. The government collaborates with major online platforms to enhance online shopping security and consumer confidence.
+
+In summary, Indian consumers enjoy comprehensive rights backed by a strong legal and institutional framework designed to ensure safety, transparency, and fairness in the marketplace. The Central Consumer Protection Authority plays a pivotal role in enforcement, while accessible dispute resolution forums empower consumers to seek redress effectively.
+
+If you need the information in a specific text file format or with additional details, please let me know.
+
+Consumer rights in India are protected and promoted by the Consumer Protection Act, 2019, which replaced the earlier 1986 Act to address modern consumer challenges, especially those arising from digital and e-commerce markets. The Act recognizes key consumer rights: the right to safety, the right to be informed, the right to choose, the right to be heard, the right to seek redressal, and the right to consumer education. These rights apply to all consumers purchasing goods or services for personal use, whether offline or online.
+
+The Central Consumer Protection Authority (CCPA) was established in July 2020 to promote, protect, and enforce consumer rights. The CCPA has powers to investigate violations, order the recall of unsafe goods, stop unfair trade practices, impose penalties for misleading advertisements, and take action against manufacturers, endorsers, and publishers of such advertisements. The CCPA also acts on behalf of consumers as a class, especially in cases of widespread harm or public interest.
+
+To resolve individual disputes, the Act provides a three-tier system of Consumer Disputes Redressal Commissions at the district, state, and national levels. These commissions handle complaints about defective goods, deficient services, unfair trade practices, and more. The framework is designed for simple, speedy, and accessible redressal. Consumers can now file complaints online through portals like e-Daakhil and the newly launched e-Jagriti, which streamlines case filing, tracking, and management, reducing delays and paperwork. Mediation is also available as an alternative dispute resolution mechanism, allowing for faster and mutually agreeable settlements.
+
+The National Consumer Helpline (NCH) has been upgraded with AI-powered speech recognition, multilingual support, and integration with regulatory bodies like the Food Safety and Standards Authority of India (FSSAI) and the Bureau of Indian Standards (BIS). This has made grievance redressal more accessible, with the helpline available in 17 languages and handling over 1.5 lakh calls monthly as of December 2024.
+
+Recent policy developments include stricter e-commerce regulations and the draft Indian standard on “E-Commerce – Principles and Guidelines for Self-Governance” by BIS. These guidelines require transparent product disclosures, clear pricing, seller details, country of origin, return policies, and data privacy protection. E-commerce platforms must obtain explicit consumer consent, prohibit misleading advertisements, and provide robust grievance redressal. There are also strong anti-counterfeiting measures and requirements to protect consumer data and privacy.
+
+The CCPA has actively enforced these provisions, issuing hundreds of notices and penalties for violations such as misleading advertisements and unfair trade practices. In 2024 alone, penalties totaling over one crore rupees were imposed for such violations.
+
+The government emphasizes sustainable consumption and ethical business practices, as reflected in the 2025 World Consumer Rights Day theme, “A Just Transition to Sustainable Lifestyles.” This focus aims to make sustainable and healthy lifestyle choices available and affordable for all consumers while strengthening consumer protection and empowerment.
+
+In summary, India’s consumer protection regime is robust and evolving. It features a comprehensive legal framework, strong enforcement through the CCPA, accessible grievance redressal via digital tools, and a focus on transparency, safety, and fair business practices in both traditional and digital marketplaces.
