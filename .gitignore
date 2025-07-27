@@ -1,76 +1,69 @@
-# ========================
-# Python-related
-# ========================
-__pycache__/
-*.py[cod]
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
-*.log
-
-# ========================
-# Virtual environment
-# ========================
+General Python ignores
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.Python/
 env/
 venv/
-ENV/
-env.bak/
-*.env
+.venv/
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# ========================
-# OS / Editor specific
-# ========================
+IDE and OS specific files
 .DS_Store
-Thumbs.db
-.vscode/
 .idea/
+.vscode/
+*.swp
+*~
+.project
+.settings
+.factorypath
 
-# ========================
-# Jupyter/IPython
-# ========================
-.ipynb_checkpoints
-*.ipynb
+Environment variables (sensitive)
+.env
+.flaskenv
 
-# ========================
-# Environment and config
-# ========================
-*.env
-.env.*
+Log files
+*.log
+logs/
 
-# ========================
-# LangChain / Vector DB
-# ========================
+Generated data and caches
 vectorstore/
 uploads/
-*.db
-*.sqlite3
-*.json
+temp/
+tmp/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
 
-# ========================
-# Models / Checkpoints
-# ========================
-*.pt
-*.pth
-*.ckpt
-*.h5
-*.pkl
+Generated audio files (from gTTS)
+The static/ directory might contain generated audio responses.
+We ignore all files in static/ by default, then unignore *.css explicitly.
+static/*
+!static/*.css
 
-# ========================
-# Large library binaries (not version-controlled)
-# ========================
-**/site-packages/**/torch/lib/*
-**/site-packages/**/llvmlite/binding/*
-
-# ========================
-# Git and LFS
-# ========================
-.gitattributes
-.gitmodules
-
-# ========================
-# Misc
-# ========================
-*.bak
-*.tmp
+Explicitly include core project files
+The following files are explicitly included by unignoring them,
+even if a broader ignore rule might catch them.
+!app.py
+!embed.py
+!preprocess.py
+!retrieve.py
+!inspect_chunks.py
+!requirements.txt
+!.env.example # It's good practice to include an example .env file
